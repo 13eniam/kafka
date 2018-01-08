@@ -16,6 +16,7 @@ To insert records into es-test-topic, start an avro-console-consumer by first lo
 container.
 
 `docker-compose exec schema-registry /bin/bash`
+
 `kafka-avro-console-producer --broker-list kafka_broker:9092 --topic es-test-topic --property value.schema=\
 '{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}`
 
